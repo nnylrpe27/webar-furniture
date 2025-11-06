@@ -1,0 +1,85 @@
+/* style.css */
+
+/* --- GLOBAL STYLES --- */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+/* --- BACKGROUND IMAGE CONFIGURATION --- */
+body {
+    /* Latar Belakang Gambar */
+    background-image: url('assets/images/interior_bg.jpg'); /* Pastikan path ini benar */
+    background-size: cover; 
+    background-attachment: fixed; 
+    background-position: center;
+    background-color: #ecadad; /* Fallback warna */
+}
+
+/* --- HEADER --- */
+header {
+    padding: 20px;
+    /* Warna utama dengan sedikit transparansi agar gambar latar belakang tembus */
+    background-color: rgba(76, 195, 217, 0.9); 
+    color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* --- MAIN CONTENT AREA --- */
+main {
+    padding: 20px;
+    max-width: 800px; /* Batasi lebar main */
+    margin: 20px auto; 
+    /* Latar belakang putih semi-transparan untuk meningkatkan kontras konten */
+    background-color: rgba(255, 255, 255, 0.9); 
+    border-radius: 15px; 
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* --- MODEL VIEWER --- */
+model-viewer {
+    width: 100%; 
+    max-width: 600px;
+    height: 400px;
+    margin: 20px auto;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    background-color: #fff;
+}
+
+/* --- BUTTONS --- */
+.buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+/* Tombol styling */
+.buttons button {
+    padding: 12px 22px;
+    border: none;
+    border-radius: 8px;
+    background-color: #4CC3D9;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
+    transition: all 0.2s;
+}
+
+.buttons button:hover {
+    background-color: #399bb1;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* --- FOOTER --- */
+footer {
+    padding: 10px;
+    background-color: #ddd;
+    font-size: 14px;
+}
