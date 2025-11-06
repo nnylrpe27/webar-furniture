@@ -17,6 +17,7 @@
   </header>
 
   <main>
+    <!-- Model Viewer tunggal -->
     <model-viewer id="viewer"
       src="./assets/models/Desk.glb"
       ar
@@ -25,9 +26,11 @@
       auto-rotate
       environment-image="neutral"
       shadow-intensity="1"
-      alt="3D Furniture">
+      alt="3D Furniture"
+      scale="0.5 0.5 0.5">
     </model-viewer>
 
+    <!-- Tombol untuk ganti model -->
     <div class="buttons">
       <button onclick="loadModel('Desk.glb')">Desk</button>
       <button onclick="loadModel('Office_Chair.glb')">Office Chair</button>
@@ -44,6 +47,7 @@
   </footer>
 
   <script>
+    // Fungsi ganti model
     function loadModel(name) {
       const viewer = document.getElementById('viewer');
       viewer.src = `./assets/models/${name}`;
