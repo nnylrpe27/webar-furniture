@@ -17,7 +17,7 @@
   </header>
 
   <main>
-    <!-- Model Viewer tunggal -->
+    <!-- Model Viewer -->
     <model-viewer id="viewer"
       src="./assets/models/Desk.glb"
       ar
@@ -30,24 +30,30 @@
       scale="0.5 0.5 0.5">
     </model-viewer>
 
-    <!-- Tombol untuk ganti model -->
+    <!-- Label -->
+    <div class="model-label">
+      <span class="pointer">👆</span>
+      <h2>Pilih Model Furniture</h2>
+    </div>
+
+    <!-- Tombol Pilihan Model -->
     <div class="buttons">
-      <button onclick="loadModel('Desk.glb')">Desk</button>
-      <button onclick="loadModel('Office_Chair.glb')">Office Chair</button>
-      <button onclick="loadModel('Couch.glb')">Couch</button>
-      <button onclick="loadModel('Light_Ceiling.glb')">Light Ceiling</button>
-      <button onclick="loadModel('Refrigerator.glb')">Refrigerator</button>
-      <button onclick="loadModel('Sidetable.glb')">Side Table</button>
-      <button onclick="loadModel('TV.glb')">TV</button>
+      <button onclick="loadModel('Desk.glb')">🪑 Desk</button>
+      <button onclick="loadModel('Office_Chair.glb')">💺 Office Chair</button>
+      <button onclick="loadModel('Couch.glb')">🛋️ Couch</button>
+      <button onclick="loadModel('Light_Ceiling.glb')">💡 Light Ceiling</button>
+      <button onclick="loadModel('Refrigerator.glb')">🧊 Refrigerator</button>
+      <button onclick="loadModel('Sidetable.glb')">🗄️ Side Table</button>
+      <button onclick="loadModel('TV.glb')">📺 TV</button>
     </div>
   </main>
 
   <footer>
-    <p>Project WebAR — Interior 3D Viewer</p>
+    <p>Interior 3D Viewer</p>
   </footer>
 
   <script>
-    // Fungsi ganti model
+    // Fungsi untuk mengganti model
     function loadModel(name) {
       const viewer = document.getElementById('viewer');
       viewer.src = `./assets/models/${name}`;

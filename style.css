@@ -1,5 +1,3 @@
-/* style.css */
-
 /* --- GLOBAL STYLES --- */
 body {
     font-family: Arial, sans-serif;
@@ -10,43 +8,63 @@ body {
 
 /* --- BACKGROUND IMAGE CONFIGURATION --- */
 body {
-    /* Latar Belakang Gambar */
-    background-image: url('assets/images/interior_bg.jpg'); /* Pastikan path ini benar */
-    background-size: cover; 
-    background-attachment: fixed; 
+    background-image: url('assets/images/interior_bg.jpg');
+    background-size: cover;
+    background-attachment: fixed;
     background-position: center;
-    background-color: #ecadad; /* Fallback warna */
+    background-color: #ecadad;
 }
 
 /* --- HEADER --- */
 header {
     padding: 20px;
-    /* Warna utama dengan sedikit transparansi agar gambar latar belakang tembus */
-    background-color: rgba(76, 195, 217, 0.9); 
+    background-color: rgba(76, 195, 217, 0.9);
     color: white;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-/* --- MAIN CONTENT AREA --- */
+/* --- MAIN AREA --- */
 main {
     padding: 20px;
-    max-width: 800px; /* Batasi lebar main */
-    margin: 20px auto; 
-    /* Latar belakang putih semi-transparan untuk meningkatkan kontras konten */
-    background-color: rgba(255, 255, 255, 0.9); 
-    border-radius: 15px; 
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 15px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 
 /* --- MODEL VIEWER --- */
 model-viewer {
-    width: 100%; 
+    width: 100%;
     max-width: 600px;
     height: 400px;
     margin: 20px auto;
     border-radius: 15px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
     background-color: #fff;
+}
+
+/* --- LABEL PILIH MODEL FURNITURE --- */
+.model-label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    color: #00aacc;
+    font-weight: bold;
+    font-size: 18px;
+    margin: 20px 0 10px 0;
+}
+
+.pointer {
+    font-size: 22px;
+    animation: bounce 1.5s infinite;
+}
+
+/* Efek animasi pada ikon jari */
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-5px); }
 }
 
 /* --- BUTTONS --- */
@@ -58,8 +76,11 @@ model-viewer {
     margin-bottom: 20px;
 }
 
-/* Tombol styling */
+/* Tombol style */
 .buttons button {
+    display: flex;
+    align-items: center;
+    gap: 6px;
     padding: 12px 22px;
     border: none;
     border-radius: 8px;
